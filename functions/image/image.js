@@ -3,7 +3,7 @@ const path = require("path")
 
 exports.handler = async (event, context) => {
   const fileName = "logo.png"
-  var imagepath = path.resolve(process.env.LAMBDA_TASK_ROOT, fileName)
+  var imagepath = path.resolve(process.env.LAMBDA_TASK_ROOT, "src", fileName)
   console.log('imagepath: ', imagepath)
 
   console.log("process.env.LAMBDA_TASK_ROOT", process.env.LAMBDA_TASK_ROOT)
