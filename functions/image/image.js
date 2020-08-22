@@ -6,6 +6,20 @@ exports.handler = async (event, context) => {
   var imagepath = path.resolve(process.env.LAMBDA_TASK_ROOT, fileName)
   console.log('imagepath: ', imagepath)
 
+  console.log("process.env.LAMBDA_TASK_ROOT", process.env.LAMBDA_TASK_ROOT)
+  fs.readdir(process.env.LAMBDA_TASK_ROOT + "", function(err, items) {
+    console.log(items);
+    for (var i=0; i<items.length; i++) {
+        console.log(items[i])
+    }
+  })
+  fs.readdir(process.env.LAMBDA_TASK_ROOT + "src", function(err, items) {
+    console.log(items);
+    for (var i=0; i<items.length; i++) {
+        console.log(items[i])
+    }
+  })
+
   if(!fs.existsSync(imagepath)) {
     return {
       statusCode: 404
