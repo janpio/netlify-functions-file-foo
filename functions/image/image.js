@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
         console.log(items[i])
     }
   })
-  fs.readdir(process.env.LAMBDA_TASK_ROOT + "src", function(err, items) {
+  fs.readdir(process.env.LAMBDA_TASK_ROOT + "/src", function(err, items) {
     console.log(items);
     for (var i=0; i<items.length; i++) {
         console.log(items[i])
