@@ -1,0 +1,23 @@
+{
+  "name": "netlify-functions-file-foo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janpio/netlify-functions-file-foo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janpio/netlify-functions-file-foo/issues"
+  },
+  "homepage": "https://github.com/janpio/netlify-functions-file-foo#readme",
+  "dependencies": {
+    "@prisma/cli": "^2.5.1"
+  }
+}
