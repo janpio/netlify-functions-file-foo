@@ -1,0 +1,1 @@
+# netlify-functions-file-foo
